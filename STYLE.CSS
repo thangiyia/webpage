@@ -1,0 +1,35 @@
+.nav{
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    color:black;
+    font-size: 3cap;
+    padding: 20px;
+    background-color: rgb(233, 232, 230);
+    
+}
+.elements1{
+    padding: 20px;
+    font-weight: bold;
+    
+}
+.elements{
+    padding: 20px;
+}
+.elements2 {
+    border: 1px solid #140a0a;
+    height: 40px;
+    width: 110px;
+    padding: 20px;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    /* Changed from 10% to 10px */
+    border-radius: 10px;
+}
+
+.elements2:hover {
+    background-color: #d4cfcf;
+    cursor: pointer;
+}

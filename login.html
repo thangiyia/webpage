@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link href="login.css" rel="stylesheet"> 
+<script src="login.js"></script>
+</head>
+<body>
+  <script>      
+
+</script>
+<div class="all">
+  <div class="container">
+    <div class="box">
+      <h2>Welcome to CodeWithThangam</h2>
+      <p>Login to your account</p>
+      
+      <div class="box2"> 
+        <p>Choose your preferred social account <br>for instant access</p>
+        <ul class="box3">
+          <li><img class="image" src="google.png" alt="Google"><a href="https://google.com/">Continue With Google</a></li>
+          <li><img class="image" src="facebook.png" alt="Facebook"><a href="https://facebook.com/">Continue With Facebook</a></li>
+          <li><img class="image" src="github.png" alt="Github"><a href="https://github.com/">Continue With Github</a></li>
+             <div class="or-line">
+    <span>or</span>
+  </div>
+  <div class="email-login">
+    <button id="emailBtn">Continue via Email</button>
+     <input type="email" id="emailInput" placeholder="Enter your email">
+     <button id="emailBtn">Send verification email </button>
+  </div>
+        </ul>
+      </div>
+    </div>
+
+
+</div>
+    <div class="side-image">
+      <img src="coding.jpg" alt="Login illustration">
+    </div>
+  </div>
+  </div>
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const emailBtn = document.getElementById('emailBtn');
+    const emailInput = document.getElementById('emailInput');
+
+    emailBtn.addEventListener('click', () => {
+      emailInput.style.display = 'block'; // show input
+      emailInput.focus(); // focus immediately
+    });
+  });
+</script>
+
+<p class="paragraph">By clicking continue, you agree to our Terms of Service and Privacy Policy.</p>
+
+<!-- footerrr  -->
+
+ <footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-col">
+      <h4>Main</h4>
+      <ul class="footer-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Work With Us</a></li>
+        <li><a href="#">My Gear</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Learn</h4>
+      <ul class="footer-list">
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Tutorials</a></li>
+        <li><a href="#">Notes</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <ul class="footer-list">
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Refund</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Social</h4>
+      <ul class="footer-list">
+        <li><img class="image" src="github.png" alt="github"><a href="https://github.com/">Github</a></li>
+        <li><img class="image" src="twiter.png" alt="twiter"><a href="https://x.com/">Twiter</a></li>
+        <li><img class="images" src="youtube.png" alt="youtube"><a href="https://www.youtube.com/">YouTube</a></li>
+        <li><img class="image" src="facebook.png" alt="facebook><a href="https://www.facebook.com/">Facebook</a></li>
+      </ul>
+    </div>
+    </div>
+  </div>
+
+ 
+  <div class="footer-credit">
+    <p>Made with ❤️ and ☕ in Nepal</p>
+  </div>
+</footer>
+</body>
+</html>
