@@ -1,0 +1,160 @@
+/* ============================= */
+/*       GLASS NAVBAR STYLE      */
+/* ============================= */
+
+.navbar {
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(18px);
+
+  padding: 14px 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 14px;
+  width: 90%;
+  margin: 15px auto;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+}
+
+/* ============================= */
+/*        NAV LIST STYLE         */
+/* ============================= */
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  position: relative;
+  cursor: pointer;
+  font-size: 17px;
+  color: #000;
+
+  padding-bottom: 10px;   /* prevents disappearing bug */
+}
+
+/* Arrow rotation */
+.arrow {
+  margin-left: 5px;
+  transition: .3s;
+}
+
+.dropdown:hover .arrow {
+  transform: rotate(180deg);
+}
+
+/* ============================= */
+/*        MEGA MENU STYLE       */
+/* ============================= */
+
+.mega-menu {
+  position: absolute;
+
+  top: 100%;    /* NO GAP → no disappearing */
+  left: 0;
+
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(18px);
+
+  padding: 20px;
+
+  border-radius: 14px;
+
+  opacity: 0;
+  transform: translateY(10px);
+
+  pointer-events: none;
+
+  transition: opacity .35s ease, transform .35s ease;
+
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+/* Keep open when hovering parent OR inside menu */
+.dropdown:hover .mega-menu,
+.mega-menu:hover {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* ============================= */
+/*       SERVICES MENU         */
+/* ============================= */
+
+.services-menu {
+  width: 260px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.big-box {
+  background: rgba(255,255,255,0.70);
+  padding: 15px;
+  border-radius: 12px;
+
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Vertical list */
+.services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ============================= */
+/*       PRODUCTS MENU         */
+/* ============================= */
+
+.products-menu {
+  width: 360px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+/* ============================= */
+/*      COMMON BOX STYLE       */
+/* ============================= */
+
+.menu-box {
+  background: rgba(255,255,255,0.75);
+
+  padding: 12px;
+  border-radius: 10px;
+
+  text-align: center;
+  cursor: pointer;
+
+  transition: .25s;
+
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
+
+.menu-box:hover {
+  background: rgba(0,0,0,0.10);
+}
+
+/* ============================= */
+/*      END OF CSS FILE        */
+/* ============================= */
